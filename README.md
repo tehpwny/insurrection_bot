@@ -20,7 +20,7 @@ cd insurrection_bot/
 
 sudo pip install bs4 request
 sudo apt install eapeak ruby ruby-haml ruby-sinatra
-ruby automatic_insurrection/insurrect.rb&
+ruby automatic_insurrection/insurrect.rb > /dev/null 2>&1 &
 python insurrection_bot.py --trap
 ```
 
