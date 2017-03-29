@@ -63,6 +63,7 @@ if '--trap' in sys.argv:
 
 
 while True:
+    sleep(4)  # wait for it.
     print('\n*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\n\n\n')
     for message in get_rants():
         print(message + '\n')
