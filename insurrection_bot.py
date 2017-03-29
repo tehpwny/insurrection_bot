@@ -58,8 +58,8 @@ if '--fortune' in sys.argv:
         print(get_rant())
     sys.exit()
 
-if '--beat' in sys.argv:
-    beat = Popen(["mplayer", "-loop", "0", "-really-quiet", "./beat"])
+if '--trap' in sys.argv:
+    beat = Popen(["mplayer", "-loop", "0", "-really-quiet", "./trap.m4a"])
 
 
 while True:
