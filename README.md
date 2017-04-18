@@ -1,7 +1,7 @@
 Insurrection bot
 =====================
 
-Insurection bot speaks or rap rants from a running automatic_insurrection server (https://github.com/johm/automatic_insurrection) using espeak and mplayer
+Insurection bot speaks or traps ramdom Tiqqun style texts using espeak and mplayer.
 
 License
 =====================
@@ -15,13 +15,11 @@ Debian
 For example into a dedicated directory:
 
 ```
-git clone https://github.com/tehpwny/insurrection_bot --recursive
+git clone https://github.com/tehpwny/insurrection_bot
 cd insurrection_bot/
 
-sudo pip install bs4 request
-sudo apt install eapeak ruby ruby-haml ruby-sinatra
-ruby automatic_insurrection/insurrect.rb > /dev/null 2>&1 &
-python insurrection_bot.py --trap
+sudo apt install espeak mplayer 
+python ./insurrection_bot.py --trap
 ```
 
 
