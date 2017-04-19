@@ -238,9 +238,10 @@ print('\n\nScolie {} \n\t - {} \n'.format(randrange(1, 1312), appelist.title()))
 
 while True:
     sleep(4)  # wait for it.
-    print('\n*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\n\n\n')
+    if PRETTY:
+        print('\n*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\n\n\n')
     message = appelist.rant()
     print(message + '\n')
     cmd = 'espeak -p 45 -s 172 "{}"'.format(message)
     sleep(choice((0.75, 1)))
-    # os.system(cmd)
+    os.system(cmd)
